@@ -1,16 +1,101 @@
-# React + Vite
+ # Team Task Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack collaborative workspace management platform built for modern teams to create projects, onboard members, assign deliverables, and monitor execution progress in real time.
 
-Currently, two official plugins are available:
+## Live Demo
+Frontend: https://team-task-manager-ten-tawny.vercel.app  
+Backend API: https://team-task-manager-production-f970.up.railway.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Admin / Manager Panel
+- Create and manage multiple project workspaces
+- Add team members using registered email
+- Assign tasks with:
+  - title
+  - description
+  - submission deadline
+  - priority level
+- Monitor all assigned task progress
+- Delete completed or invalid tasks
+- Delete unnecessary projects
 
-## Expanding the ESLint configuration
+### Team Member Panel
+- View all assigned tasks
+- Track project workspace association
+- View submission deadline
+- Update execution status:
+  - To Do
+  - In Progress
+  - Done
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Dashboard Analytics
+- Total Projects
+- Pending Deliveries
+- Completed Deliveries
+- Team Activity Monitoring
+
+### Authentication
+- Secure JWT based login/register
+- Role based access (Admin / Member)
+
+---
+
+## Tech Stack
+
+### Frontend
+- React + Vite
+- Tailwind CSS
+- Axios
+- React Router DOM
+- Lucide React Icons
+- Recharts
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB Atlas
+- Mongoose
+- JWT Authentication
+- bcryptjs
+
+### Deployment
+- Frontend: Vercel
+- Backend: Railway
+
+---
+ 
+### Backend Setup
+
+cd backend  
+npm install  
+npm run server
+
+### Frontend Setup
+
+cd client/frontend  
+npm install  
+npm run dev
+
+---
+
+## Author
+
+Akshun Jindal   
+Full Stack Developer | MERN Stack Enthusiast
+
+---
+
+## Project Objective
+
+This project was developed as a recruiter-focused full-stack assessment to demonstrate:
+- backend architecture
+- REST API integration
+- role based authentication
+- real-world CRUD workflows
+- responsive dashboard UI
+- production deployment handling
+
+It simulates an internal company task execution system used by managers and employees for workflow coordination.
