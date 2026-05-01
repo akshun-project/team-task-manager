@@ -66,25 +66,6 @@ Backend API: https://team-task-manager-production-f970.up.railway.app
 - Backend: Railway
 
 ---
-
-## Folder Structure
-
-teamtaskmanager/
-│
-├── backend/
-│   ├── config/
-│   ├── controllers/
-│   ├── middleware/
-│   ├── models/
-│   ├── routes/
-│   └── server.js
-│
-└── client/
-    └── frontend/
-        ├── src/
-        └── public/
-
----
  
 ### Backend Setup
 
