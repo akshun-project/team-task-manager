@@ -48,8 +48,7 @@ const Dashboard = () => {
     pendingTasks === 0 ? 0 : Math.min(pendingTasks * 15, 100);
   return (
     <div className="space-y-8">
-      {/* Hero Executive Banner */}
-      <div className="rounded-3xl bg-gradient-to-r from-indigo-800 to-purple-900 p-8 text-white shadow-[0_10px_30px_rgba(99,102,241,0.25)] flex justify-between items-center">
+       <div className="rounded-3xl bg-gradient-to-r from-indigo-800 to-purple-900 p-8 text-white shadow-[0_10px_30px_rgba(99,102,241,0.25)] flex justify-between items-center">
         <div>
           <h1 className="text-3xl font-bold mb-2">
             {user?.role === "Admin"
