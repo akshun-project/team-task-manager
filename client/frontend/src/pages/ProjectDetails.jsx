@@ -206,7 +206,7 @@ const ProjectDetails = () => {
             />
             <button
               disabled={addingMember}
-              className={`w-full py-3 rounded-2xl text-white flex justify-center items-center gap-2 ${
+              className={`w-full py-3  cursor-pointer  rounded-2xl text-white flex justify-center items-center gap-2 ${
                 addingMember ? "bg-gray-500 cursor-not-allowed" : "bg-black"
               }`}
             >
@@ -305,12 +305,9 @@ const ProjectDetails = () => {
       </div>
 
       {/* Assigned Tasks */}
-      <div className="bg-white rounded-3xl shadow-sm p-7 border border-gray-100">
+      <div className="bg-white  rounded-3xl shadow-sm p-7 border border-gray-100">
         <h2 className="text-xl font-semibold mb-2">Assigned Tasks</h2>
-        <p className="text-sm text-gray-400 mb-6">
-          Monitor current allocations, submission deadlines and execution progress.
-        </p>
-
+        
         {tasks.length > 0 ? (
           <div className="grid md:grid-cols-2 gap-5">
             {tasks.map((task) => {

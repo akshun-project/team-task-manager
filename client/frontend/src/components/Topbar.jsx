@@ -59,7 +59,7 @@ const Topbar = () => {
 
           <button
             onClick={() => setOpen(!open)}
-            className="flex items-center gap-3 bg-black text-white rounded-2xl px-4 py-2.5 hover:opacity-95 transition"
+            className="flex cursor-pointer items-center gap-3 bg-black text-white rounded-2xl px-4 py-2.5 hover:opacity-95 transition"
           >
             <div className="w-8 h-8 rounded-full bg-white text-black flex items-center justify-center font-semibold">
               {user?.name?.charAt(0)}
@@ -82,7 +82,7 @@ const Topbar = () => {
 
               <button
                 onClick={handleLogout}
-                className="w-full flex items-center justify-center gap-2 bg-[#f4f5f7] hover:bg-[#eceef2] rounded-2xl py-2.5 text-sm transition"
+                className="w-full  cursor-pointer  flex items-center  justify-center gap-2 bg-[#f4f5f7] hover:bg-[#eceef2] rounded-2xl py-2.5 text-sm transition"
               >
                 <LogOut size={15} />
                 Logout

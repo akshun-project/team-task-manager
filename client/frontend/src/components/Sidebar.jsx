@@ -68,7 +68,7 @@ const Sidebar = () => {
             <button
               key={item.path}
               onClick={() => navigate(item.path)}
-              className={`w-full flex items-center gap-3 px-4 py-3 rounded-2xl text-sm transition-all duration-300 ${
+              className={`w-full cursor-pointer flex items-center gap-3 px-4 py-3 rounded-2xl text-sm transition-all duration-300 ${
                 location.pathname === item.path
                   ? "bg-gradient-to-r from-indigo-50 to-purple-50 text-indigo-700 font-semibold shadow-sm"
                   : "text-gray-600 hover:bg-gray-100 hover:translate-x-1"
