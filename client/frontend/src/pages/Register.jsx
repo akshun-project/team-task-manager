@@ -137,7 +137,7 @@ const Register = () => {
             <button
               type="submit"
               disabled={creatingAccount}
-              className={`w-full text-white py-3.5 rounded-2xl transition font-medium flex justify-center items-center gap-2 ${
+              className={`w-full text-white cursor-pointer py-3.5 rounded-2xl transition font-medium flex justify-center items-center gap-2 ${
                 creatingAccount ? "bg-gray-500 cursor-not-allowed" : "bg-black"
               }`}
             >
